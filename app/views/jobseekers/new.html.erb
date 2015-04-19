@@ -1,0 +1,20 @@
+<h1> Add A jobseeker</h1>
+<%= form_tag '/employees' do %>
+<ul>
+<li><h4><%= label_tag :prefix %>
+<%= text_field_tag :prefix %></li>
+<br>
+<li><h4><%= label_tag :first_name %>
+<%= text_field_tag :first_name %></li>
+<br>
+<li><h4><%= label_tag :last_name %>
+<%= text_field_tag :last_name %></li>
+<br>
+<li><h4><%= label_tag :title %>
+<%= text_field_tag :title %></li>
+<br>
+<li><h4><%= label_tag :company_name %>
+<%= text_field_tag :company_name %></li>
+<br>
+<%= submit_tag "Submit" %></ul>
+<% end %>
